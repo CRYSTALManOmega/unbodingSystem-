@@ -1,0 +1,48 @@
+/* Manage Tasks Styles */
+#task-form-container {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-form-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#task-form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#task-form-container input[type="text"],
+#task-form-container textarea,
+#task-form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-form-container button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-form-container button:hover {
+    background-color: #45a049;
+}
+.question {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}

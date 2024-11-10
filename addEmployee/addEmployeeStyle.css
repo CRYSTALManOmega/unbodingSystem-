@@ -1,0 +1,121 @@
+/* General Styling for the Add Employee Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+    color: #555;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button Styling */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form button[type="button"] {
+    background-color: #f44336;
+}
+
+form button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+/* Toast Notification Styling */
+.toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+/* Error Styling */
+.error {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+}
+
+input.error, select.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Initially hidden */
+}
+
+/* Form Layout */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form label, form input, form select {
+    grid-column: span 1;
+}
+
+form button {
+    grid-column: span 2;
+}
+
+form .full-width {
+    grid-column: span 2;
+}

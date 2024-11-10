@@ -1,0 +1,54 @@
+/* Home Page Styles */
+
+/* Welcome Message */
+#welcome-message {
+    font-size: 32px;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* Video Section */
+.video-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.video-box h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Task Updates Section */
+.task-updates-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.task-updates-box h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#task-updates {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+#task-updates li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#task-updates li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,88 @@
+/* General Styling for the Registration Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 520px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+    color: #666666;
+    font-weight: 600;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Toast Notification Styling */
+.toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+    font-size: 0.9em;
+    z-index: 1000;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 0.95;
+}

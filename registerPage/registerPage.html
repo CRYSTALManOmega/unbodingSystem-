@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="registerPageStyle.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Register</h1>
+    <form id="registerForm" action="registerProcess.php" method="POST">
+        <!-- Name Fields -->
+        <label for="firstName">First Name: <span class="required">*</span></label>
+        <input type="text" id="firstName" name="First_Name" required>
+
+        <label for="lastName">Last Name: <span class="required">*</span></label>
+        <input type="text" id="lastName" name="Last_Name" required>
+
+        <!-- Contact Information -->
+        <label for="email">Email: <span class="required">*</span></label>
+        <input type="email" id="email" name="Email" required>
+
+        <!-- Credentials -->
+        <label for="username">Username: <span class="required">*</span></label>
+        <input type="text" id="username" name="Username" required>
+
+        <label for="password">Password: <span class="required">*</span></label>
+        <input type="password" id="password" name="Password" required>
+
+        <!-- Job and Type Selection -->
+        <label for="type">Type: <span class="required">*</span></label>
+        <select id="type" name="Type" required>
+            <option value="">Select Type</option>
+            <option value="Employee">Employee</option>
+            <option value="Student">Student</option>
+        </select>
+
+        <label for="jobTitle">Job Title: <span class="required">*</span></label>
+        <input type="text" id="jobTitle" name="Job_Title" required>
+
+        <!-- Additional Details -->
+        <label for="branchName">Branch Name: <span class="optional">(Optional)</span></label>
+        <input type="text" id="branchName" name="Branch_Name" placeholder="Optional">
+
+        <label for="companyName">Company Name: <span class="required">*</span></label>
+        <input type="text" id="companyName" name="Company_Name" required>
+
+        <label for="nationalId">National ID: <span class="required">*</span></label>
+        <input type="text" id="nationalId" name="National_Id" required>
+
+        <label for="birthDate">Birth Date: <span class="required">*</span></label>
+        <input type="date" id="birthDate" name="BirthDate" required>
+
+        <!-- Submission -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Profile created successfully!</div>
+</div>
+
+<script src="registerPageScript.js"></script>
+</body>
+</html>

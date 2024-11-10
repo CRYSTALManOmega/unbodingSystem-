@@ -1,0 +1,40 @@
+/* Report Page Styles */
+.report-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.report-section h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.report-section button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.report-section button:hover {
+    background-color: #2980b9;
+}
+
+.report-output {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-output h2 {
+    font-size: 24px;
+    color: #34495e;
+}

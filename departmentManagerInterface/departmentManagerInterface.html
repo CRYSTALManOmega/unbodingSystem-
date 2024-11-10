@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Manager Interface</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="manageTasks.css">
+</head>
+<body>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <div class="menu-item" onclick="loadReports()">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBTV7FDT8O5N0LkScI9D5bSjQI96ex2asMQ&usqp=CAU" alt="Reports" class="menu-img">
+            <span>Reports</span>
+        </div>        
+        <div class="menu-item" onclick="loadManageTasks()">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACUCAMAAADIzWmnAAAAZlBMVEX///8AAADQ0NCmpqbj4+Orq6uBgYHExMRkZGS9vb2zs7P4+PiSkpIkJCTy8vLp6elPT084ODhaWlpVVVUODg5sbGxCQkIuLi4pKSl7e3szMzPY2NiMjIzKysqcnJxfX18cHBwWFhYkbYs5AAAEsUlEQVR4nO2c7bqqIBCFKS1TSy3Tyr7v/yZPorYRxQKWZifWr13b8H0GGIZxkJAO+VNrc5/oK5523UVLTgLgo9qfe0I8bFGID8heLBkscIQ5pNMD46FsPLsutJSsinZWRzjijDa8W/raLV0rS6LHZLDLm01tQFObqrt3YEhqxgzSPU/GyR7a3QH1Oi6kLcpYjO4VcuLYWd7T+mMxF2UMTnAXdMwbTDBtFYykgNzhIKd5exdMWyUjmYP9JGW0MG1VjCUkzE/2wkiWUD/ZZLStpZou2ZOxtCTITzYY3UxueeZVMPolJKS7ecaZHmHFSMrZDfGTPKN2lFYxVrMb4II4Rjf/uF0pab+tMZaWzPQhOUbarhXaKgqiOmMZ9OlPHI6RdpDqQN9wjD7IT7YxqvYOz1j5yZWmJftlrPyk3pjsmbGE1ItP+2YsZ7fWstg7Y+UnNSzZP6O+nxyAUdtPDsHol5Cq3T0E4zPAULTkMIx6frLPtZCVjp/kGC/5x2gup2V550UHo87E4RjtiYrWIf0xtZUoKeOr+0k+xlVLlhbWsfI/xftgZT/JMwbXDhShivvSTtiLcx5ld0tDNvZcwVIecV5wBXG3IUs/KT1x2vbXQSinp+U8lrhNan4SmQMgPt0tTBJHNLnJku55JFccKCMJi76/ryORin3nWgoSy0jOq/dGcBp+jpFM7+9BykxuNOPDV+9Gz5gntQ5RthdqdxsB48OWYUcWIbyMgrFblmGECMA49WYN1RcOu3nBC7ns77UZ/dOtzVUsmLDQTt9zgazmDKQ2oyh+ZB4oKgRGVYQJYRTH4X8h10WFkWHSZRTfP31eE+7lEQ9MvKbLSDcdF7cuh96G+ZHjSqoW5kAYG4FT/uVWotFuQRgbvzeML/W/MlrS07qWnhiC0ZVGfOxXmXVqCMaTAuOEeW44VjuuB7YjmaVrOWXXocfjIziSFtua8T0YGUaMfifu4WflCBnjhNO4GD3hSgGqmwMw+kJGTIkkglFoyAOmRBLCSOwkSnlFsQcjxOR7gmY6DmdEEGPfMowYGUaMDCNGP8IYuo10tnesOXG/JWPerVpVLiAf3rpcx2w+/M3nlqwSYI70eSiJV/T3oNTkw18ziu+/fl4TxvKIJ3Q+3Do7NZ3zL5m9Qjh1JFWbc7+zL+QvwjI6rXbo0AcYyeF2kzpVpJY3CyTFxfGhTMWHYj58I6uFVoG4AqN4Dy6W1kGaofLhvdeH69tR6+Cmyni8bGJJLbROVSjNa9nCPm5/HlgzqQ37B/yjf3vEasLKvhZ9gJGO55GvM9+wXv8M4zfEZtG1Llo/fxsNo/go6WY0jETIiDvgr83o3tsRAa+vgDGSY9uu7+YBs80/ku/pXYYRI8OIkWHE6EcY7ZnVUH1bFzQveKHaY1v9fPi8Ldt9Z1LNSvXhyJphcX24Zj4cmGsW58P/rvk0o/j+TH14JI84R+fDlx6n/Es2H87//6Vckw/PZRhf6n+tI/Vi4VFRgRK2ybHWNaemPrzBqPRcYej6cPnFsPZ6LuN7MDKMGBlGjH4mNkv55XZcjN9QHx4IGb+gPrzjJSiDM5LpYd14s2N2ncEIIbkUv/nehlDmSa4O4z8sYXUeGso3wQAAAABJRU5ErkJggg==" alt="Manage Tasks" class="menu-img">
+            <span>Manage Tasks</span>
+        </div>
+        <div class="menu-item" onclick="loadChat()">
+            <img src="https://png.pngitem.com/pimgs/s/148-1489636_chat-icon-png-image-free-download-searchpng-chat.png" alt="Chat" class="menu-img">
+            <span>Department Chat</span>
+        </div>
+
+        <!-- Clickable User Icon at the Bottom to Load User Profile -->
+        <div class="menu-item user-click" onclick="loadUserProfile()">
+            <img src="https://cdn-icons-png.flaticon.com/512/552/552721.png" alt="User" class="user-img">
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content" id="main-content">
+        <!-- The page content for each section will load dynamically here -->
+    </div>
+
+    <!-- Link to external JavaScript files -->
+    <script src="report.js"></script>
+    <script src="chat.js"></script>
+    <script src="settings.js"></script>
+    <script src="createModule.js"></script>
+    <script src="addQuestion.js"></script>
+    <script src="assignModule.js"></script>
+    <script src="manageTasks.js"></script>
+    <script src="userData.js"></script> <!-- Added for displaying user profile -->
+</body>
+</html>

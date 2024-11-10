@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module View</title>
+    <script src="moduleView.js"></script>
+</head>
+<body>
+    <h1 id="module-title"></h1>
+    <p id="module-description"></p>
+    <div id="module-questions"></div>
+    <button onclick="submitModule()">Submit Module</button>
+</body>
+</html>

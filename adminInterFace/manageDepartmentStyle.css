@@ -1,0 +1,132 @@
+/* General styling for the Manage Department section */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+/* Styling for the department action buttons */
+.department-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.department-actions button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.department-actions button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Highlight active button */
+.active-button {
+    background-color: #333;
+    color: white;
+}
+
+/* Toast Notification Styling */
+.toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    font-size: 0.9em;
+    z-index: 10;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+/* Optional close button for toast */
+.toast::after {
+    content: "✕";
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.toast.show::after:hover {
+    color: white;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    transition: border-color 0.3s; /* Transition for interactive border color */
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styling for mobile view */
+@media (max-width: 600px) {
+    .department-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container {
+        padding: 15px;
+    }
+}
